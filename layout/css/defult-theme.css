@@ -1,0 +1,38 @@
+/*  باخد العناصر الموجودة بالستايل الاساسي الي فيها الوان وبجيبها لهون قص لصق */
+
+
+/*  'طبعا مو كل الالوان بس الي لونها احمر هي الي رح تتغير لان */
+
+
+/*  بوزعن ضمن غروبات كولو باك غرواند وهك كل غروب بامرو تبع اللون*/
+
+
+/*  بعدين بنسخ الملف كلو هاد وبعمل نسخة بغير اسم ضمن السي اساس بسميه مثلا PURPLE-THEME */
+
+.navbar-inverse .navbar-nav>.active>a,
+.navbar-inverse .navbar-nav>.active>a:hover,
+.navbar-inverse .navbar-nav>.active>a:focus,
+.dropdown-menu>li>a:hover,
+.dropdown-menu>li>a:focus,
+.carousel-indicators .active,
+.option-box .gear-check {
+    background-color: #E41B17;
+}
+
+.navbar-inverse .navbar-brand span,
+.about h1 span,
+.testimonials span,
+.footer h3,
+.footer .copyright span {
+    color: #E41B17;
+}
+
+.option-box .color-option,
+.testimonials .carousel-indicators li.active {
+    border: 3px solid #e41b17;
+}
+
+.dropdown-menu {
+    /* هاد بوردر احمر  من فوق خط للدروب داون مينيو شكلو لطيف */
+    border-top: 3px solid #E41B17;
+}

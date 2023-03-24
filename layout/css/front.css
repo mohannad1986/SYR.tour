@@ -1,0 +1,316 @@
+/* Start Main Rulez */
+
+body {
+    background-color: #F4F4F4;
+    font-size: 16px;
+}
+
+h1 {
+    font-size: 55px;
+    margin: 40px 0;
+    font-weight: bold;
+    color: #666;
+}
+
+.input-container {
+    position: relative;
+}
+
+.asterisk {
+    font-size: 20px;
+    position: absolute;
+    right: 10px;
+    top: 7px;
+    color: #D20707;
+}
+
+.main-form .asterisk {
+    font-size: 30px;
+    position: absolute;
+    right: 30px;
+    top: 8px;
+    color: #D20707;
+}
+
+.nice-message {
+    padding: 10px;
+    background-color: #FFF;
+    margin: 10px 0;
+    border-left: 5px solid #080;
+}
+
+
+/* End Main Rulez */
+
+
+/* Start Bootstrap Edits */
+
+
+/* Start Login Page */
+
+.login-page form,
+.the-errors {
+    /* العرض الاقصى وخليه بالنص*/
+    max-width: 380px;
+    margin: auto;
+}
+
+.login-page form input {
+    margin-bottom: 10px;
+}
+
+
+/* لاحظ هك بنسق الي عملتلا سلكتد  */
+
+.login-page [data-class="login"].selected {
+    color: #337AB7;
+}
+
+.login-page [data-class="signup"].selected {
+    color: #5cb85c;
+}
+
+
+/* لاحظ عملت اللون ابيض مشان اخفي العنوان اذا ماكان سلكتد  */
+
+
+/* وهك بتختفي كلمة لوغ ان او كلمة ساين اب  */
+
+
+/* يعني لون العنوان مختفي بحالتو الطبيعية  */
+
+.login-page h1 {
+    color: #C0C0C0;
+}
+
+
+/* الان السبان الي جوا اعنوان حطو بونتر يعني بس تجي الفارة يتاشر عليه  */
+
+
+/* وروح عالجي كويري كمل شغل  */
+
+.login-page h1 span {
+    cursor: pointer;
+}
+
+
+/* هون قلتلو اخفي فوم الساين اب بقا الساين اب مخفي بالحالة الطبيعية  */
+
+
+/* ولكن هك
+ بيختفي كل كلاس الساين اب ومن ضمنو السبان الي فيه كلمة ساين اب فوق وهي مشكلة  */
+
+
+/* لهك رح اعمل الداتا شوفها بالفورم  */
+
+.login-page .signup {
+    display: none;
+}
+
+.the-errors .msg {
+    padding: 10px;
+    text-align: left;
+    background-color: #fff;
+    margin-bottom: 8px;
+    border-right: 1px solid #e0e0e0;
+    border-top: 1px solid #e0e0e0;
+    border-bottom: 1px solid #e0e0e0;
+    color: #919191;
+}
+
+.the-errors .error {
+    border-left: 5px solid #cd6858
+}
+
+
+/* End Login Page */
+
+
+/* Start Categories Page */
+
+.item-box {
+    /* حطيت البوسشن ريليتف مشان تحت حط الاسعار بطريقة تعجبني  */
+    position: relative;
+}
+
+.item-box .price-tag {
+    background-color: #B4B4B4;
+    padding: 2px 10px;
+    /* هلا عالبوسشن هك بحركو لحالو براحتي  */
+    position: absolute;
+    left: 0;
+    top: 10px;
+    font-weight: bold;
+    color: #FFF;
+}
+
+.item-box .approve-status {
+    position: absolute;
+    top: 40px;
+    left: 0;
+    background-color: #b85a5a;
+    color: #FFF;
+    padding: 3px 5px;
+}
+
+.item-box .caption p {
+    /* لحتى يكون في هايت محدد للبوكس  */
+    height: 44px;
+    max-height: 44px;
+}
+
+
+/* End Categories Page */
+
+
+/* Start Profile Page */
+
+.information {
+    margin-top: 20px
+}
+
+.information ul {
+    padding: 0;
+    margin: 0;
+}
+
+.information ul li {
+    padding: 10px;
+}
+
+
+/* هك بلون سطر وبترك سطر  */
+
+.information ul li:nth-child(odd) {
+    background-color: #EEE;
+}
+
+
+/* السبان ديسبلاي ان لاين بلوك مشان يجو ع سطر واحد ع مستوى واحد */
+
+.information ul li span {
+    display: inline-block;
+    width: 120px;
+}
+
+.thumbnail .date {
+    /* ليروح عالييمن  */
+    text-align: right;
+    /* ضغر الخط  */
+    font-size: 13px;
+    color: #AAA;
+    font-weight: bold;
+}
+
+.information .btn {
+    margin-top: 10px;
+}
+
+
+/* End Profile Page */
+
+
+/* Start Show Item Page */
+
+.item-info h2 {
+    padding: 10px;
+    margin: 0;
+}
+
+.item-info p {
+    padding: 10px;
+}
+
+.item-info ul li {
+    padding: 10px;
+}
+
+.item-info ul li:nth-child(odd) {
+    background-color: #e8e8e8;
+}
+
+.item-info ul li span {
+    display: inline-block;
+    width: 120px;
+}
+
+.tags-items a {
+    display: inline-block;
+    background-color: #e2e2e2;
+    padding: 2px 10px;
+    border-radius: 5px;
+    color: #666;
+    margin-right: 5px;
+}
+
+
+/* هون تنسيق قسم الكوممنت  */
+
+.add-comment h3 {
+    margin: 0 0 10px;
+}
+
+.add-comment textarea {
+    /* عملتلا دسبلي بلوك مشان تاخد كل البلوك مفي شي يجي جنبها */
+    /* بدونا بيجي الزر جنبها  */
+    display: block;
+    margin-bottom: 10px;
+    /* عطيتا عرض اكبر  */
+    width: 500px;
+    /* وارتفاع اكبر  */
+    height: 120px;
+}
+
+.comment-box {
+    margin-bottom: 20px;
+}
+
+.comment-box img {
+    /* صغرنا الصورة  */
+    max-width: 100px;
+    /* المارجن بوتوم مشان ماتزق بالاسم  */
+    margin-bottom: 10px;
+}
+
+.comment-box .lead {
+    /* هاد الخط الليد تبعنا يعني التعليق  */
+    background-color: #e0e0e0;
+    /* عطيتو بوسشن ريليتف مشان احسن اعملو سهم بالبيفور واالافتر  */
+    position: relative;
+    padding: 10px;
+    margin-top: 25px;
+}
+
+
+/* هون شبون بعمل السهم الي قبل التعليق هي طريقتو  */
+
+.comment-box .lead:before {
+    content: "";
+    width: 0;
+    height: 0;
+    border-width: 15px;
+    border-style: solid;
+    /* لهون عملنا متل وصلة صغيرة قبل الليد  */
+    /* لاحظ كيف مقسم لاربع اقسام كلو شفاف الا القسم الي عاليسار  */
+    border-color: transparent #e0e0e0 transparent transparent;
+    /* اجباري بدي بوسن ابسلوت  مشان احسن طلعو لبرا ينفر شوف بالليفت كيف طلعتو  */
+    position: absolute;
+    left: -28px;
+    top: 10px;
+}
+
+
+/* End Show Item Page */
+
+
+/* Start Our Custom */
+
+
+/* هاد الخط الافقي بصفحة الايتمز  */
+
+.custom-hr {
+    border-top: 1px solid #c9c9c9;
+}
+
+
+/* End Our Custom */

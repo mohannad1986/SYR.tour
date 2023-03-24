@@ -1,0 +1,441 @@
+body {
+    padding-top: 70px;
+    /* overflow: hidden; */
+}
+
+
+/*  الفونت فاميلي الي شايفها نسخناها من الموقع  */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+.lead {
+    font-family: 'Lobster', cursive;
+}
+
+
+/*------------------------------------------------(start overwritting bootstrap)----------------------------------------------------------*/
+
+
+/* الناف بار الاساسي عملنا الحد اادنى لللارتفاع سبعين */
+
+.navbar {
+    min-height: 70px;
+}
+
+
+/*  تغير اللون الخاص بكتابة اللينك  */
+
+.navbar-inverse .navbar-nav>li>a {
+    color: #bbb;
+    /* كبر البادنغ من فوق ومن تحت احلا  */
+    padding-top: 25px;
+    padding-bottom: 25px;
+    /* نكبر الخط شوي تبع الناف بار بقا بس الي عاليمين ها*/
+    font-size: 16px;
+}
+
+
+/*  غير لون البراندهاد الكلمة الي عاليمين */
+
+.navbar-inverse .navbar-brand {
+    color: #bbb;
+    font-size: 30px;
+    line-height: 40px;
+}
+
+
+/*الدروب داون مينو العناصر تبعو  */
+
+.dropdown-menu {
+    background-color: #333333;
+    /*  حجم الدروب داون زودو شوي */
+    min-width: 200px;
+}
+
+
+/*  هي بس لحتى الدروب داون منيو تروح عاليمين بدال اليسار  انا عاملا هلا لليسار متل الافتراضي */
+
+.navbar-right .dropdown-menu {
+    left: auto;
+    right: 0;
+}
+
+
+/* عناصر قائمة الدروب داون   */
+
+.dropdown-menu>li>a {
+    color: #fff;
+    padding: 6px 20px;
+    /*  بنعملا عالمراحل المتسلسلة هي  موز يعني موزلا او يعني اوبرا و0.5 ثانية مدتها */
+    -webkit-transition: padding 0.5s ease;
+    -moz-transition: padding 0.5s ease;
+    -o-transition: padding 0.5s ease;
+    transition: padding 0.5s ease;
+}
+
+
+/* لاحظ بيطلع عنا الهوفر والفوكس مع بعض */
+
+.dropdown-menu>li>a:hover,
+.dropdown-menu>li>a:focus {
+    color: #fff;
+    /*  هلا انا بدي بس حط الفارة عند العناصر يزود البادنغ حركة حلوة */
+    /*   انا حاطط فوق البادنغ عشرين بس بالهوفر بيصير البادنغ هك عاليسار*/
+    padding-left: 30px;
+}
+
+
+/*   ل خط الديفايدر يلي ضمن الدروب داون منيو */
+
+.dropdown-menu .divider {
+    background-color: #a92727;
+}
+
+
+/*----------------------------------------(end over writting bootsrap)---------------------------------------------------*/
+
+
+/*    تنسيق الكابشن تبع الكاروسل يعني الكتابة تبعو*/
+
+.carousel-caption {
+    bottom: 70px;
+    /* هي طريفة تلوين لضيف الشفافيةاخر شي*/
+    background: rgb(201 165 165 / 30%);
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+
+/*  هدول الانديكيتورز بس مو الداءة بحد ذاتا لا المجموعة العامة الن */
+
+.carousel-indicators {
+    /*  مكانو في الاسفل*/
+    bottom: 0;
+}
+
+.carousel-indicators li {
+    height: 15px;
+    width: 15px;
+    border: 1px #eee solid;
+}
+
+
+/*هلا الاكتف تبع الاندكيتور */
+
+.carousel-indicators .active {
+    height: 17px;
+    width: 17px;
+}
+
+
+/*---------------------انتهي الكاروسل-------------------------------*/
+
+
+/*  -------------- من هون عم نبلش ننسق الكاروسل انر ----------------- */
+
+
+/*-----------بدايـــة سيكشن برايس تايبل  price table-------------------------*/
+
+.price_table {
+    background: #eee;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.price_table .price_box {
+    background: #fff;
+    padding: 10px;
+    border: 1px solid #ddd;
+    margin-bottom: 15px;
+}
+
+.price_table .price_box h2 {
+    margin: 5px 0 15px
+}
+
+
+/*  يعني لمن اعمل هوفر عالبرايس بوكس رح طبق هدول عالبي الي هوي البارغراف الي جواه */
+
+.price_table .price_box:hover p {
+    /*  fبدي اعملو ترانسفور يعني يكبر شوية ويلف حوالين نفسو  */
+    /* اول خطوة ح يكبر العنصر شوية*/
+    -webkit-transform: scale(1.1, 1.1) rotate(360deg);
+    -moz-transform: scale(1.1, 1.1) rotate(360deg);
+    -o-transform: scale(1.1, 1.1) rotate(360deg);
+    transform: scale(1.1, 1.1) rotate(360deg);
+    border: 2px solid #dfdfdf;
+}
+
+.price_table .price_box p {
+    font-size: 15px;
+    font-weight: bold;
+    color: #666;
+    /*   هون بعد ماضفت السنتر بلوك للبارغراف مشان اعملو جوا دويرة */
+    width: 200px;
+    height: 200px;
+    /* لهون عملتو مربع هلا بعملو بوردرز ريديو مشان ليصير ع شكل دويرة  */
+    background: #f3f3f3;
+    border-radius: 50%;
+    /*  الان ليجي التكست بنص الدويرة بنعمل لاين هايت ع قدو */
+    line-height: 100px;
+    /*  هاد البوردر ضفتو كنفس لون الخلفية قصد لحتى بس اعمل هوفر يتغي لونو طلاع عالهوفر فوق وشوف*/
+    border: 2px solid #fff;
+    /*  الان ح نبلش حركات خاصة بالس اساس ممكن تحسها معقدة بس ركز */
+    /* '  المدة الخاصة بالترانزمشن طبعا بكررها مشان المويلا والاوبرا  وبقية المتصفحات */
+    /* هلا بطلع بعمل للبرايس بوكس هوفر */
+}
+
+.price_table .price_box ul {
+    /* المسافة بين الخطوط عليتا احسن */
+    line-height: 250%;
+    font-size: 18px;
+}
+
+
+/* رح نسق شوي الزر   */
+
+.price_table .price_box a {
+    margin-bottom: 5px;
+}
+
+
+/*------------------------ end price table---------------------*/
+
+
+/*---------------------------------------footer--بداية قسم----------------------------------*/
+
+.footer {
+    background: #111;
+    color: #aaa;
+    padding-top: 10px;
+}
+
+
+/* هاد للينكات تبع الفوتر */
+
+.footer a {
+    color: #aaa;
+}
+
+.footer a :hover {
+    color: #333;
+}
+
+.footer h3 {
+    letter-spacing: 1px;
+    margin: 30px 0 20px;
+}
+
+
+/*fبدي نسق اليوال تبع ال sitemap */
+
+.footer .three-coulmns {
+    /*  عملت اوفر فلو هدن لان بدي اعمل لل لي الي جواتا فلوت ليفت هون ومبدي ياها تعملي مشاكل*/
+    overflow: hidden;
+}
+
+.footer .three-coulmns li {
+    width: 33.3333%;
+    float: left;
+    padding: 5px 0;
+}
+
+.footer .social-list {
+    overflow: hidden;
+    margin: 20px 0 10px;
+}
+
+.footer .social-list li {
+    float: left;
+    margin-right: 3px;
+    opacity: 0.7;
+    filter: alpha(opacity=70);
+}
+
+.footer .social-list li:hover {
+    opacity: 1;
+}
+
+.footer .img-thumbnail {
+    background: rgba(0, 0, 0, 0.4);
+    border: solid 1px #444;
+    margin-bottom: 5px;
+}
+
+.footer .copyright {
+    background: #333;
+    color: #aaa;
+    padding: 15px 0;
+    margin-top: 30px;
+    font-size: 18px;
+}
+
+
+/*---------------------------------------footer--نهاية قسم---------------------------------*/
+
+
+/*--------------------------------------loadinf-over lay بداية سكشن -----------------------------*/
+
+.loading-overlay {
+    background: #222;
+    color: #fff;
+    /*  فيكست بيملا الشاشة كلا من فوق لتحت لو حطيت ابسلوت ماح تملاها لتحت*/
+    /*لو حطيت ابسلوت كانت ح تغطي البودي بس وانا البودي ماني محددلو هايت معين لهك ماح تملا الشاشة لتحت */
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    /* gلهون بينعمل بس مابيملا كل الشاشة  */
+    /* بالاندكس بصير فوق كل الطبقات */
+    z-index: 99999;
+    /* lمشان الغي السكرول ع جنب ح حط للبودي اوفرفلو هيدن ووقتا فيني حط البوسشن ابسلوت */
+    /*وهلا بروح عالبلوغنز بالحي كويري  */
+}
+
+
+/*-----بنسخ هون من صفحة سبينر الي نقيتو الكود الخاص بالس اس اس-----*/
+
+.spinner {
+    width: 40px;
+    height: 40px;
+    position: relative;
+    margin: 100px auto;
+}
+
+.double-bounce1,
+.double-bounce2 {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: #333;
+    opacity: 0.6;
+    position: absolute;
+    top: 0;
+    left: 0;
+    -webkit-animation: sk-bounce 2.0s infinite ease-in-out;
+    animation: sk-bounce 2.0s infinite ease-in-out;
+}
+
+.double-bounce2 {
+    -webkit-animation-delay: -1.0s;
+    animation-delay: -1.0s;
+}
+
+@-webkit-keyframes sk-bounce {
+    0%,
+    100% {
+        -webkit-transform: scale(0.0);
+    }
+    50% {
+        -webkit-transform: scale(1.0);
+    }
+}
+
+@keyframes sk-bounce {
+    0%,
+    100% {
+        transform: scale(0.0);
+        -webkit-transform: scale(0.0);
+    }
+    50% {
+        transform: scale(1.0);
+        -webkit-transform: scale(1.0);
+    }
+}
+
+
+/*---------------------------------------loading-over lay نهاية سكشن----------------------------*/
+
+
+/* _______________________________________________________________________________________ */
+
+
+/* Start Show Item Page */
+
+.item-info h2 {
+    padding: 10px;
+    margin: 0;
+    text-align: center;
+}
+
+.item-info p {
+    padding: 10px;
+}
+
+.item-info ul li {
+    padding: 10px;
+}
+
+.item-info ul li:nth-child(odd) {
+    background-color: #e8e8e8;
+}
+
+.item-info ul li span {
+    display: inline-block;
+    width: 120px;
+}
+
+.tags-items a {
+    display: inline-block;
+    background-color: #e2e2e2;
+    padding: 2px 10px;
+    border-radius: 5px;
+    color: #666;
+    margin-right: 5px;
+}
+
+
+/* هون تنسيق قسم الكوممنت  */
+
+.add-comment h3 {
+    margin: 0 0 10px;
+}
+
+.add-comment textarea {
+    /* عملتلا دسبلي بلوك مشان تاخد كل البلوك مفي شي يجي جنبها */
+    /* بدونا بيجي الزر جنبها  */
+    display: block;
+    margin-bottom: 10px;
+    /* عطيتا عرض اكبر  */
+    width: 500px;
+    /* وارتفاع اكبر  */
+    height: 120px;
+}
+
+.comment-box {
+    margin-bottom: 20px;
+}
+
+.comment-box .lead {
+    /* هاد الخط الليد تبعنا يعني التعليق  */
+    background-color: #e0e0e0;
+    /* عطيتو بوسشن ريليتف مشان احسن اعملو سهم بالبيفور واالافتر  */
+    position: relative;
+    padding: 10px;
+    margin-top: 25px;
+}
+
+
+/* هون شبون بعمل السهم الي قبل التعليق هي طريقتو  */
+
+.comment-box .lead:before {
+    content: "";
+    width: 0;
+    height: 0;
+    border-width: 15px;
+    border-style: solid;
+    /* لهون عملنا متل وصلة صغيرة قبل الليد  */
+    /* لاحظ كيف مقسم لاربع اقسام كلو شفاف الا القسم الي عاليسار  */
+    border-color: transparent #e0e0e0 transparent transparent;
+    /* اجباري بدي بوسن ابسلوت  مشان احسن طلعو لبرا ينفر شوف بالليفت كيف طلعتو  */
+    position: absolute;
+    left: -28px;
+    top: 10px;
+}
+
+
+/* End Show Item Page */
